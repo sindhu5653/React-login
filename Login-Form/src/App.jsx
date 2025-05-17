@@ -1,14 +1,17 @@
+import React from "react";
+import Login from "./components/LoginPage";
+// import LoginForm from "./components/LoginForm";
 
-import React from 'react';
-import { SignProvider } from './SignContext';
-import LoginPage from './LoginPage';
+function App(){
 
-const App = () => {
-  return (
-    <SignProvider>
-      <LoginPage />
-    </SignProvider>
-  );
-};
+  return(
+    <div className="main">
+      <h1 className="head">Login Form</h1>
+      <Login/>
+      {/* <LoginForm/> */}
+    </div>
+  )
+}
 
 export default App;
+
